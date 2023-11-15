@@ -1,0 +1,86 @@
+body {
+    background-image: url(./fondo1.jpg);
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    background-color: #ffffff;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  }
+  
+  .logo {
+    width: 80px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2057d6;
+    margin-bottom: 30px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #4b5367;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;  
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    background-color: #1750d5;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+   button[type="submit"]:hover {
+    background-color: #122551;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  p a {
+    color: #1e3771;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    display: inline-block;
+    margin: 20px 5px 0 5px;
+   
+  }
+.dos
+{
+    text-align: center;
+    color: red;
+}  
+
+.fff{
+    width: 100%;
+    background-color: #1750d5;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }

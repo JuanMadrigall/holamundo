@@ -1,0 +1,75 @@
+  <div class="product">
+    <picture>
+      <img src="image/arroz.png"> 
+    </picture>
+
+    <div class="detail">
+      <p>
+        <b>Arroz</b><br>
+        <small>Nuevos provedores</small>
+      </p>
+      <samp>$5.00</samp>
+    </div>
+    <div class="button">
+      <p class="star">
+        <strong>&star;</strong>
+        <strong>&star;</strong>
+        <strong>&star;</strong>
+        <strong>&star;</strong>
+        <strong>&star;</strong>
+      </p>
+      <button class="btn-carrito" onclick="agregarCarrito1()">
+        🛒<br>Añadir al Carrito
+      </button>
+      
+      <a class="xd" href="#">Comprar</a>
+      
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  // Array para productos en carrito
+const carrito = [];
+
+// Agregar producto al carrito
+function agregarCarrito(producto) {
+
+  carrito.push(producto);
+
+}
+
+// Mostrar carrito
+function verCarrito() {
+
+  // Recorrer y mostrar productos
+  let html = '';
+  carrito.forEach(item => {
+    html += `
+      <div class="producto">
+        <p>${item.nombre}</p> 
+        <button class="eliminar" onclick="eliminarProducto(${item.id})">Eliminar</button>  
+      </div>
+    `;
+  });
+
+  document.getElementById('carrito').innerHTML = html;
+
+}
+
+// Eliminar producto por ID
+function eliminarProducto(id) {
+  
+  const index = carrito.findIndex(item => item.id === id);
+  carrito.splice(index, 1);
+
+  verCarrito(); // Actualizar vista
+}
+
+// Eventos
+document.getElementById('verCarrito').addEventListener('click', verCarrito);

@@ -1,0 +1,49 @@
+/* Estilo para el encabezado */
+h1 
+{
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin: 20px 0;
+}
+  
+  /* Estilo para el botón de cierre de sesión */
+  input[type="submit"]
+{
+    background-color: yellow;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+  /* Cambiar color del botón al pasar el ratón */
+  input[type="submit"]:hover {
+    background-color: #d6f565;
+}
+  
+  /* Estilo para el contenedor principal */
+  body 
+{
+    background-color: #fcfdf8;
+    text-align: center;
+}
+  
+  /* Estilo para el mensaje de bienvenida */
+  p 
+{
+    font-family: 'Verdana', sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin: 20px;
+
+/* Estilo para el tamaño de la imagen */
+
+}
+img{
+width: 50;
+height: 50;    
+}
+ 
